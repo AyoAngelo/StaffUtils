@@ -56,3 +56,158 @@ To enable a language go in the configuration file (SERVER/plugins/staffutils_PLA
 | `staffutils.staffvanish.alerts` | Allow player to receive staffvanish alerts |
 | `staffutils.helpop.alerts` | Allow player to receive helpop alerts |
 
+# Configuration file
+A preview of config.yml
+```
+# StaffUtils 2.0.0 - by @AyoAngelo on Telegram
+# Documentation / Help -> https://github.com/AyoAngelo/StaffUtils/blob/main/README.md
+
+# DO NOT TOUCH
+config-version: 2.0.0
+# DO NOT TOUCH
+
+# Should the players know you're using StaffUtils?
+credits: true
+
+language: IT
+
+# Screenshare, also known as ss
+screenshare:
+  enabled: true
+  enableBanClickTemplates: true
+  enableMessageToSuspect: true
+  enableDebugRole: true
+  enableSlogAlert: true
+  freezeSuspect: false
+  enableFreezeMessage: false
+  screenshareServer: 'yourServer'
+  screenshareTeleportCoordinates: "0, 0, 0"
+
+# Freeze
+freeze:
+  enabled: true
+  enableAlerts: true
+  enableFrozenNotify: true
+
+# Staffchat, the chat reserved to the staff
+staffchat:
+  enabled: true
+  enableStaffChatSym: true
+  staffChatSym: '#' # Required if enableStaffChatSym is set to true
+
+# Adminchat, the chat reserved to the server's admins
+adminchat:
+  enabled: true
+  enableAdminChatSym: true
+  adminChatSym: '%' # Required if enableAdminChatSym is set to true
+
+# Automod (beta)
+# full guide and explanation of automod can be found in the documentation
+automod:
+  enabled: false
+  enableSmartFinds: true
+  enableNoSpaceChecking: true
+  enableStaffAlert: true
+  enableUserAlert: true
+  enableAppeal: true
+  censor: true
+
+  blockLinks:
+    enableBlockLinks: true
+    action: 'MUTE' # Available: MUTE, BAN, WARN, NOTHING
+    duration: '10s' # Use common format: 5s, 7m, 8d, 2w, 3mo, 7y, permanent
+    reason: 'You sent a prohibited link in chat! (Automod)'
+    whitelistedLinks: # in case of false positive use link's whitelist
+      - 'minecraft.net'
+
+  blockNumericIps: # To avoid doxing
+    enableBlockNumericIps: true
+    action: 'BAN' # Available: MUTE, BAN, WARN, NOTHING
+    duration: 'permanent' # Use common format: 5s, 7m, 8d, 2w, 3mo, 7y, permanent
+    reason: 'You sent a ip in chat! (Automod)'
+
+  blacklistedWords:
+    AutomodExample: # the name does not count
+      blockedWord: 'AutomodExample' # The detected word(s) (divide the words with a semicolon -> ; <- to put more words)
+      action: 'MUTE' # Available: MUTE, BAN, WARN, NOTHING
+      duration: '10s' # Use common format: 5s, 7m, 8d, 2w, 3mo, 7y, permanent
+      reason: 'You said a bad word! (Automod)'
+    AutomodExample2: # the name does not count
+      blockedWord: 'Ez; Failed' # The detected word(s) (divide the words with a semicolon -> ; <- to put more words for the same reason)
+      action: 'MUTE' # Available: MUTE, BAN, WARN, NOTHING
+      duration: '10m' # Use common format: 5s, 7m, 8d, 2w, 3mo, 7y, permanent
+      reason: 'You very said a bad word! (Automod)'
+
+  whitelistedWords: # in case of false positive use word's whitelist
+    - 'AutomodWhitelistExample'
+
+# Noswear, alerts for prohibited words to the staff
+noswear:
+  enabled: true
+  enableSmartFinds: true
+  enableNoSpaceChecking: true
+  enableUserAlert: true
+  censor: true
+
+  blacklistedWords:
+    - 'BlackListExample'
+
+  whitelistedWords: # in case of false positive use word's whitelist
+    - 'WhitelistExample'
+
+# StaffMSG, allow staffers to write messages to the players with a specific alert
+staffmsg:
+  enabled: true
+  enableTitleNotify: true
+  enableActionBarNotify: true
+  enableSound: true
+  enableAlerts: true
+  sound: 'minecraft:block.note_block.pling'
+  soundVolume: 1.0
+  soundPitch: 1.0
+
+# Report, enable players to reports another players
+report:
+  enabled: true
+  enableReportsOnOffline: false
+  requireReason: true
+  commandCooldown: 20 # In seconds
+
+# Stafflist
+stafflist:
+  enabled: true
+  enableCommandPermission: false
+  stafflistRanks:
+    owner:
+      format: ' &8• &4Owner &8» &f$list' # Use $list for the staffer's list
+      height: 4
+    admin:
+      format: ' &8• &cAdmin &8» &f$list' # Use $list for the staffer's list
+      height: 3
+    mod:
+      format: ' &8• &eModerator &8» &f$list' # Use $list for the staffer's list
+      height: 2
+    helper:
+      format: ' &8• &3Helper &8» &f$list' # Use $list for the staffer's list
+      height: 1
+
+# Stafflist vanish, allow staffers to hide from stafflist
+stafflistvanish:
+  enabled: true
+  enableAlerts: true
+
+# Staffvanish, allow staffers to disable all staff's commands and alerts
+staffvanish:
+  enabled: true
+  enableAlerts: true
+
+# Helpop, allow players to ask question or send a message to the staffers
+helpop:
+  enabled: true
+  commandCooldown: 20 # In seconds
+  enableActionBarNotify: true
+  enableSound: false
+  sound: 'minecraft:block.note_block.chime'
+  soundVolume: 1.0
+  soundPitch: 1.0
+```
