@@ -23,6 +23,7 @@ Staffutils official repository, the plugin will be open-source soon
 # Languages
 The plugin comes with 2 built in languages, if you want, you can customize or create a new one. To create a new language, duplicate the lang_en.yml file and rename it like that: lang_LANGUAGEID.yml
 To enable a language go in the configuration file (SERVER/plugins/staffutils_PLATFORM/config.yml) and set the key "language" to the id of the language you want to enable
+
 **ALL MESSAGES SUPPORT PLACEHOLDERAPI'S PLACEHOLDER**
 
 # Permissions
