@@ -1,7 +1,4 @@
 ![a](images/staffutils2.png)
-<p align="center">
-  Staffutils official repository, the plugin will be open-source soon
-</p>
 
 # Installation
 **Bungeecord/Waterfall**:
