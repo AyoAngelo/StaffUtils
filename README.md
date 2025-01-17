@@ -21,4 +21,22 @@ Staffutils official repository, the plugin will be open-source soon
 - Setup the plugin with the configuration file (YOURSPIGOT/plugins/staffutils_spigot/config.yml)
 
 # Languages
-The plugin comes with 2 built in langs, if you want you can customize or create a new language. To create a new language, duplicate the lang_en.yml file and rename it like that: lang_LANGUAGEID.yml
+The plugin comes with 2 built in languages, if you want, you can customize or create a new one. To create a new language, duplicate the lang_en.yml file and rename it like that: lang_LANGUAGEID.yml
+
+# Permissions
+| Permission | Description |
+| --- | --- |
+| `staffutils.reload` | Allow to reload the plugin's config.yml |
+| `staffutils.screenshare.use` | Allow to start and stop a screenshare with /ss |
+| `staffutils.screenshare.debug` | Allow to spectate all screenshares with /ss debug |
+| `staffutils.screenshare.slogalert` | Allow player to receive slog-during-screenshare alerts |
+| `staffutils.freeze.use` | Allow to use /freeze command on players |
+| `staffutils.freeze.alerts` | Allow player to receive freeze alerts |
+| `staffutils.freeze.exempt` | Gives freeze exempt to player |
+| `staffutils.staffchat` | Allow to use staffchat |
+| `staffutils.adminchat` | Allow to use adminchat |
+| `staffutils.automod.alerts.default` | Allow player to receive automod words alerts |
+| `staffutils.automod.alerts.ip` | Allow player to receive automod numeric ip alerts |
+| `staffutils.automod.alerts.links` | Allow player to receive automod link alerts |
+| `staffutils.automod.alerts.appeal` | Allow player to receive automod appeal alerts |
+| `staffutils.automod.bypass` | Gives automod bypass to player |
