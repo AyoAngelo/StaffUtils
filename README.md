@@ -1,4 +1,4 @@
-# StaffUtils ![su](images/su.png)
+# StaffUtils ![staffutils](images/staffutils.png)
 Staffutils official repository, the plugin will be open-source soon
 
 # Installation
