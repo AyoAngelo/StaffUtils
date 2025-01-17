@@ -1,6 +1,6 @@
-<p align="center">
 ![staffutils](images/staffutils.png)
-Staffutils official repository, the plugin will be open-source soon
+<p align="center">
+  Staffutils official repository, the plugin will be open-source soon
 </p>
 
 # Installation
