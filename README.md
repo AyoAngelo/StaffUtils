@@ -58,7 +58,7 @@ To enable a language go in the configuration file (SERVER/plugins/staffutils_PLA
 
 # Configuration file
 A preview of config.yml
-```
+```yaml
 # StaffUtils 2.0.0 - by @AyoAngelo on Telegram
 # Documentation / Help -> https://github.com/AyoAngelo/StaffUtils/blob/main/README.md
 
