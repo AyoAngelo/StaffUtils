@@ -2,7 +2,7 @@
 Staffutils official repository, the plugin will be open-source soon
 
 # Installation
-**Bungeecord**:
+**Bungeecord/Waterfall**:
 - Download the latest BUNGEECOORD version available on this github repository
 - Put the downloaded .jar file in folder "YOURBUNGEE/plugins"
 - Restart your proxy (Plugins like ServerUtils or Plugman, can create some bugs)
@@ -22,6 +22,8 @@ Staffutils official repository, the plugin will be open-source soon
 
 # Languages
 The plugin comes with 2 built in languages, if you want, you can customize or create a new one. To create a new language, duplicate the lang_en.yml file and rename it like that: lang_LANGUAGEID.yml
+To enable a language go in the configuration file (SERVER/plugins/staffutils_PLATFORM/config.yml) and set the key "language" to the id of the language you want to enable
+**ALL MESSAGES SUPPORT PLACEHOLDERAPI'S PLACEHOLDER**
 
 # Permissions
 **Some permissions might be useless, it depends on the configuration choices**
@@ -50,3 +52,4 @@ The plugin comes with 2 built in languages, if you want, you can customize or cr
 | `staffutils.staffvanish.use` | Allow to use staffvanish |
 | `staffutils.staffvanish.alerts` | Allow player to receive staffvanish alerts |
 | `staffutils.helpop.alerts` | Allow player to receive helpop alerts |
+
