@@ -1,5 +1,4 @@
-# StaffUtils! [su](https://github.com/user-attachments/assets/bcdb2788-15f1-4ef2-bb3d-e798fed6c09e)
-
+# StaffUtils https://github.com/user-attachments/assets/69553a6a-feb5-4919-8a2d-ba879d76bb55
 Staffutils official repository, the plugin will be open-source soon
 
 # Installation
